@@ -1,0 +1,1282 @@
+# Copyright (C) 2020 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-04-17T21:03:15+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: _s\n"
+
+#. Theme Name of the theme
+msgid "_s"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://underscores.me/"
+msgstr ""
+
+#. Description of the theme
+msgid "Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for."
+msgstr ""
+
+#. Author of the theme
+msgid "Automattic"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://automattic.com/"
+msgstr ""
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:22
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: 404.php:31
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:49
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:18
+msgid "https://wordpress.org/"
+msgstr ""
+
+#. translators: %s: CMS name, i.e. WordPress.
+#: footer.php:21
+msgid "Proudly powered by %s"
+msgstr ""
+
+#. translators: 1: Theme name, 2: Theme author.
+#: footer.php:27
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:53
+msgid "Primary"
+msgstr ""
+
+#: functions.php:130
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:132
+msgid "Add widgets here."
+msgstr ""
+
+#: header.php:26
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:49
+msgid "Primary Menu"
+msgstr ""
+
+#. translators: %s: post date.
+#: inc/template-tags.php:30
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. translators: %s: post author.
+#: inc/template-tags.php:46
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:63
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:66
+msgid "Posted in %1$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:70
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:73
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:83
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:100
+#: template-parts/content-page.php:39
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/woocommerce.php:186
+msgid "View your shopping cart"
+msgstr ""
+
+#. translators: number of items in the mini cart.
+#: inc/woocommerce.php:190
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: search query.
+#: search.php:22
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:23
+msgid "Previous:"
+msgstr ""
+
+#: single.php:24
+msgid "Next:"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:25
+#: template-parts/content.php:53
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:40
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Job Basics"
+msgstr "Job-Grundlagen"
+
+#: template-parts/form-vacancy.php
+msgid "Job title"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Job title"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Job Category"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "symbols used"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Job location"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Choose a category"
+msgstr ""
+
+
+#: template-parts/form-vacancy.php
+msgid "Select job location"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "City"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Street"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Building"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "ZIP code"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "The same as the company location"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Start work date"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "When you expect a candidate to begin work on this position"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Starts on"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Apply deadline"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Last day when job seekers can apply for this position"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Set a date"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Additional job specs"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Immediate offer"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Temporary position"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Job conditions"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Workload"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Working hours"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "From"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "To"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Till"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Salary"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Range"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Exact amount"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "CHF gross/year"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "CHF"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Vacation"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Days"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Weeks amount"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Comment: how is vacation distributed over a year"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Other benefits"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Describe other benefits of working on this position for this company. E.g., advanced educational training, insurance, or other sorts of support."
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Contract type"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Job details"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Teaching approach"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "A pedagogy method/a concept you work with in a Kita"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "You can choose a few options"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "E.g., Montessori should be present in pedagogical work and consciously implemented"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Group and kids"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "A children age in a group a worker is expected to work with on this position"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Peers"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Mixed ages"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "years old"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "A language you work with in a group with kids or in a Kita"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "You can choose a few options"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Other"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Add language"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Job description"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Requirements"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Describe the required work experience, education, certification, or other characteristics of the perfect candidate for this role"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Nice to have"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Describe skills and knowledge that would be nice to have for this role, that would be a plus"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Responsibilities"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Create a list of the daily tasks and duties in this position: <br>• task 1 <br> • task 2"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Benefits"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Describe benefits of working in this position for this company. E.g., advanced educational training, insurance, or other sorts of support"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Other details"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "You can mention additional details other details"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Applying process"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "You can mention additional details that make you and your company stand out"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "About company"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "You can mention additional details about company"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Upload photo gallery"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Upload photos"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Next step"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Publish"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Preview"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Back"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Save as draft"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Job post preview"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Location"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Urgency"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Employment"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Kids age in a group"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Working language(s)"
+msgstr ""
+
+#: template-parts/form-vacancy.php
+msgid "Working language"
+msgstr ""
+
+#: template-parts/offers-loop.php
+msgid "Apply"
+msgstr ""
+
+#: template-parts/offers-loop.php
+msgid "Expired offer"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "I'm looking for a job"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "I'm hiring"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Welcome to Carejobs for job seekers"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Apply for jobs that are right for you"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Create a profile"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Continue with Google"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "or"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Create an account"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Already have an account"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Sign in"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "By proceeding, you agree to our Terms of use and our"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Privacy policy"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Email address"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Password"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Provide contact person details"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "First name"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Last name"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Your working email"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Your job position"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Phone number"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Continue"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "This is how job seekers will see your personal information"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "You can hide or change your personal information anytime"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Your Name"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Your job title"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Set up a company profile"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Company name"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "City"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Street and building"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Building"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Zip code"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Number of team members"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Number of childcare places"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Company website"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Location"
+msgstr ""
+
+#: template-parts/registrations-en.php
+msgid "Company size"
+msgstr ""
+
+
+#: template-parts/user-edit-profile.php
+msgid "Save changes"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Cancel"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Job alert"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Want to receive updates/notifications/news"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Subscribe"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Job preferences"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "What kind of a job are you looking for"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Update your job preferences to get the most relevant jobs for you"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "E.g., Co-educator"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Remove this job title"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Add another job title"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Select a job category from a dropdown"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Job category"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Add your name"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Add your location"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Add your phone number"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Only .jpg or .png images"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Max 4MB"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Add your job location"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Add your job title"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "No job categories found"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Cantone"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "All cities"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Remove this location"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Add another location"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Drag and drop a resume file to upload"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Your resume will be private. You can use it to submit your job"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "applications via Easy Apply"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Select files"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Additional documents"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "No files found"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Drag and drop your files to upload"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Your documents will be private. You can use them to submit"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "your job applications via Easy Apply"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Delete account"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Are you sure you wan to delete your account"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "If you delete your account, you will permanently lose your profile, candidates and other data"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "I understand that all my data will be removed permanently"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "By proceeding, you agree to our Terms of use and our Privacy policy"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Account deleted"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Thank you! Your data has been removed"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "To job board"
+msgstr ""
+
+#: template-parts/user-edit-profile.php
+msgid "Experience"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Edit company details"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Company info"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Website"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Add website company"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Company size"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Working hours"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Add working hours"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Teaching approach"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Describe this Kita teaching approach"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Photo Gallery"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "You have not upload any photos yet"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Upload photos"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "here"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Upload logo"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Only .jpg or .png images"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Max 4MB"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Company name"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Company address"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "5 team members"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "30 childcare places"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Add working hours"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Describe this Kita teaching approach"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Save changes"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Cancel"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Submit"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Hide contact information"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Delete account"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Are you sure you want to delete your account?"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "If you delete your account, you will permanently lose your profile, candidates and other data"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "I understand that all my data will be removed permanently"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "By proceeding, you agree to our Terms of use and our Privacy policy"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Account deleted"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Thank you! Your data has been removed"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "To job board"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "No active job offers found."
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "No closed job offers found."
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "posted offers"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Post a new job"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "closed offers"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Drag and drop photos to upload"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Upload photos of your company to attract more applicants"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "The photos will be displayed in the company profile"
+msgstr ""
+
+#: template-parts/edit-company-page.php
+msgid "Select files"
+msgstr "Dateien auswählen"
+
+#: template-parts/applied-jobs.php
+msgid "Where"
+msgstr ""
+
+#: template-parts/applied-jobs.php
+msgid "Job title, keyword, or company"
+msgstr ""
+
+#: template-parts/applied-jobs.php
+msgid "City or ZIP code"
+msgstr ""
+
+#: template-parts/applied-jobs.php
+msgid "Search"
+msgstr ""
+
+#: template-parts/applied-jobs.php
+msgid "saved offers"
+msgstr ""
+
+#: template-parts/applied-jobs.php
+msgid "applied jobs"
+msgstr ""
+
+#: template-parts/applied-jobs.php
+msgid "In development"
+msgstr ""
+
+#: template-parts/applied-jobs.php
+msgid "hidden jobs"
+msgstr ""
+
+#: template-parts/applied-jobs.php
+msgid "What"
+msgstr ""
+
+#: template-parts/applied-jobs.php
+msgid "You have not saved a job yet"
+msgstr ""
+
+
+#: template-parts/applied-jobs.php
+msgid "Save jobs by clicking the bookmark on a job you like"
+msgstr ""
+
+
+#: template-parts/applied-jobs.php
+msgid "Search jobs"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Job summary"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Start work"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Apply deadline"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Job description"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Have you noticed a description discrepancy or mismatch"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Report"
+msgstr ""
+
+#: single-job-offer.php
+msgid "See"
+msgstr ""
+
+#: single-job-offer.php
+msgid "other jobs"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Pedagogy"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Kids age in group"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Working hours"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Workload"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Vacation"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Languages"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Other benefits"
+msgstr ""
+
+#: single-job-offer.php
+msgid "About company"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Requirements"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Nice to have"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Responsibilities"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Benefits"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Applying process"
+msgstr ""
+
+#: single-job-offer.php
+msgid "Other details"
+msgstr ""
+
+#: single-job-offer.php
+msgid ""
+msgstr ""
+
+#: new_homepage.php
+msgid "Sort by"
+msgstr "
+
+#: new_homepage.php
+msgid "Reset all"
+msgstr "
+
+#: new_homepage.php
+msgid "Most recent"
+msgstr "
+
+#: new_homepage.php
+msgid "Earliest start date"
+msgstr "
+
+#: new_homepage.php
+msgid "Category"
+msgstr "
+
+#: new_homepage.php
+msgid "Location"
+msgstr "
+
+#: new_homepage.php
+msgid "Application form"
+msgstr "
+
+#: new_homepage.php
+msgid "Attach your resume files"
+msgstr "
+
+#: new_homepage.php
+msgid "Max 3 files up to 4MB"
+msgstr "
+
+#: new_homepage.php
+msgid "Full name"
+msgstr "
+
+#: new_homepage.php
+msgid "Email"
+msgstr "
+
+#: new_homepage.php
+msgid "Compose a cover letter"
+msgstr "
+
+#: new_homepage.php
+msgid "Send"
+msgstr "
+
+#: new_homepage.php
+msgid "By proceeding, you agree to our Terms of use and our Privacy policy"
+msgstr "
+
+#: new_homepage.php
+msgid "Applied"
+msgstr "
+
+#: new_homepage.php
+msgid "You have applied for a job successfully"
+msgstr "
+
+#: template-parts/contact-page.php
+msgid "Contact"
+msgstr "
+
+#: template-parts/contact-page.php
+msgid "Write us a message and we will get back to you as soon as possible"
+msgstr "
+
+#: template-parts/contact-page.php
+msgid "Care jobs"
+msgstr "
+
+#: template-parts/contact-page.php
+msgid "Ticino pl. 7"
+msgstr "
+
+#: template-parts/contact-page.php
+msgid "Zurich"
+msgstr "
+
+#: template-parts/contact-page.php
+msgid "Business hours"
+msgstr "
+
+#: template-parts/contact-page.php
+msgid "Monday"
+msgstr "
+
+#: template-parts/contact-page.php
+msgid "Friday"
+msgstr "
+
+#: header.php
+msgid "Carejobs"
+msgstr "
+
+#: header.php
+msgid "Post a job"
+msgstr "
+
+#: header.php
+msgid "Upload resume"
+msgstr "
+
+#: header.php
+msgid "Support"
+msgstr "

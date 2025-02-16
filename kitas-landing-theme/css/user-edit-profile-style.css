@@ -1,0 +1,692 @@
+.user-edit-profile {
+    font-family: "Montserrat", sans-serif;
+}
+
+.user-edit-profile .main-informations {
+    display: flex;
+    margin-top: 40px;
+    gap: 70px;
+}
+
+.user-edit-profile .edit-main-profile-open {
+    display: none;
+    background: rgba(242, 245, 248, 1);
+    height: 960px;
+    max-width: 408px;
+    width: 100%;
+}
+
+.user-edit-profile .edit-main-profile {
+    display: flow-root;
+    background: rgba(242, 245, 248, 1);
+    height: 466px;
+    max-width: 408px;
+    width: 100%;
+}
+
+.user-edit-profile .edit-main-profile {
+    position: relative;
+}
+
+.user-edit-profile .user-edit-details {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.user-edit-profile .edit-job-preferences {
+    width: 100%;
+    position: relative;
+}
+
+.user-edit-profile a.block-open-for-edit-job-preferences {
+    position: absolute;
+    top: 16px;
+    right: 0px;
+}
+
+.user-edit-profile .edit-job-preferences h2 {
+    color: rgba(28, 28, 28, 1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.user-edit-profile .edit-job-preferences p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.user-edit-profile .edit-job-preferences-colums {
+    display: flex;
+    margin-top: 40px;
+    gap: 22px;
+}
+
+.user-edit-profile section.stepBlockShowforJob:not(:first-child) {
+    margin-top: -26px;
+}
+
+.user-edit-profile input.job-title,
+.user-edit-profile select.job_category,
+.user-edit-profile select.location,
+.user-edit-profile input.job-cantone,
+.user-edit-profile form#job-alert-info-form input {
+    padding: 12px 16px;
+}
+
+.user-edit-profile .edit-job-preferences-colums.mt-55 {
+    margin-top: 55px;
+}
+
+.user-edit-profile .stepBlockShowforLocation:not(:first-child) {
+    margin-top: -40px;
+}
+
+.stepBlockShowforJob .edit-job-preferences-colum .label-hide {
+    display: none;
+}
+
+.stepBlockShowforJob:first-of-type .edit-job-preferences-colum .label-hide {
+    display: block;
+}
+
+.stepBlockShowforLocation .edit-job-preferences-colum .label-hide {
+    display: none;
+}
+
+.stepBlockShowforLocation:first-of-type .edit-job-preferences-colum .label-hide {
+    display: block;
+}
+
+
+.user-edit-profile .edit-job-preferences-colum {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: end;
+}
+
+.user-edit-profile .edit-job-preferences-colum label {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.user-edit-profile .add-another-job-title {
+    margin-top: 12px;
+    font-size: 14px;
+    color: rgba(109, 167, 204, 1);
+    line-height: 24px;
+    cursor: pointer;
+    display: flex;
+    width: 172px;
+}
+
+.add-another-job-title.delete {
+    margin-top: 12px;
+    font-size: 14px;
+    color: rgba(163, 180, 188, 1);
+    line-height: 24px;
+    cursor: pointer;
+
+}
+
+.user-edit-profile .hr-gray {
+    margin: 32px 0 40px;
+    background-color: rgba(242, 242, 242, 1);
+    display: block;
+    width: 100%;
+    height: 1px;
+}
+
+.user-edit-profile .edit-job-location {
+    display: none;
+}
+
+.user-edit-profile .edit-job-preferences-colum input,
+.user-edit-profile .edit-job-preferences-colum select {
+    height: 48px;
+    width: 356px;
+}
+
+.user-edit-profile div#upload-doc-click-for-experience,
+.user-edit-profile div#upload-doc-click-for-additional {
+    display: flex;
+    width: 100%;
+    height: 152px;
+    border: 1px solid rgba(242, 242, 242, 1);
+    text-align: center;
+    margin-top: 16px;
+}
+
+.user-edit-profile .show-documents-for-experience-block .file-name,
+.user-edit-profile .show-experience-block .file-entry,
+.user-edit-profile .show-additional-documents-block .file-name,
+.user-edit-profile .show-documents-for-additional-block .file-name {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(67, 136, 175, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 32px;
+    margin-bottom: 16px;
+}
+
+.user-edit-profile .show-experience-block,
+.user-edit-profile .show-additional-documents-block {
+    position: relative;
+    margin-left: 32px; 
+}
+
+.user-edit-profile .show-documents-for-experience-block .file-name:after,
+.user-edit-profile .show-experience-block .file-entry:after,
+.user-edit-profile .show-additional-documents-block .file-name:after,
+.user-edit-profile .show-documents-for-additional-block .file-name:after {
+    content: '';
+    background-image: url('/wp-content/themes/kitas-landing-theme/img/file.svg');
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: -32px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.user-edit-profile .show-documents-for-experience-block span.delete-doc-for-experience,
+.user-edit-profile .show-documents-for-additional-block span.delete-doc-for-additional {
+    background: url(/wp-content/themes/kitas-landing-theme/img/trash.svg);
+    display: block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.user-edit-profile .experience-doc {
+    position: relative;
+    margin-top: 84px;
+}
+
+.user-edit-profile .show-block-experience,
+.user-edit-profile .show-block-additional {
+    display: none;
+}
+
+.user-edit-profile a.block-open-for-experience-block,
+.user-edit-profile a.block-open-for-additional-block {
+    position: absolute;
+    top: 16px;
+    right: 0px;
+}
+
+.user-edit-profile div#upload-doc-click-for-experience img,
+.user-edit-profile div#upload-doc-click-for-additional img {
+    display: block;
+    margin: 32px auto 0 32px;
+    width: 40px;
+    height: 40px;
+}
+
+.user-edit-profile .block-text-upload {
+    text-align: left;
+}
+
+.user-edit-profile div#upload-doc-click-for-experience h4,
+.user-edit-profile div#upload-doc-click-for-additional h4 {
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.user-edit-profile .show-job-preferences-colums {
+    display: flex;
+    margin-top: 40px;
+}
+
+.user-edit-profile .show-job-preferences-colum {
+    width: 50%;
+}
+
+.user-edit-profile div#upload-doc-click-for-experience p,
+.user-edit-profile div#upload-doc-click-for-additional p {
+    font-size: 12px;
+    color: rgba(119, 119, 119, 1);
+    line-height: 16px;
+}
+
+.user-edit-profile div#upload-doc-click-for-experience .warning-info,
+.user-edit-profile div#upload-doc-click-for-additional .warning-info {
+    display: block;
+    margin-top: 24px;
+    font-size: 12px;
+    color: rgba(228, 30, 63, 1);
+}
+
+.user-edit-profile div#upload-doc-click-for-experience span.select-file-for-experience-company,
+.user-edit-profile div#upload-doc-click-for-additional span.select-file-for-additional-documents {
+    display: block;
+    width: 133px;
+    height: 40px;
+    background: rgba(94, 113, 141, 1);
+    color: #fff;
+    padding: 8px 24px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 56px auto 0;
+    cursor: pointer;
+}
+
+.user-edit-profile .additional-documents {
+    margin-top: 82px;
+    position: relative;
+}
+
+.user-edit-profile .additional-documents-h3 {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(119, 119, 119, 1);
+}
+
+.user-edit-profile .delete-account {
+    display: flex;
+    justify-content: center;
+    margin: 70px auto 0;
+    position: relative;
+    cursor: pointer;
+    width: 156px;
+}
+
+.user-edit-profile .delete-account span {
+    font-size: 16px;
+    color: rgba(163, 180, 188, 1);
+    line-height: 24px;
+}
+
+.user-edit-profile .user-photo {
+    max-width: 240px;
+    max-height: 240px;
+    margin: 16px 84px 24px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.user-edit-profile .edit-main-profile-open .user-photo {
+    margin: 16px 84px;
+}
+
+.user-edit-profile .user-photo .avatar-user-b {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.user-edit-profile .upload-logo-block {
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #fff;
+}
+
+.user-edit-profile .upload-logo-block h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-edit-profile .upload-logo-block span {
+    position: absolute;
+    top: 65%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+}
+
+.user-edit-profile .user-photo .camera-right-b {
+    position: absolute;
+    top: 80%;
+    right: 0%;
+    z-index: 2;
+}
+
+.user-edit-profile .user-info {
+    margin: 0 40px;
+}
+
+.user-edit-profile .user-info h4.user-name {
+    text-align: center;
+    font-size: 24px;
+    color: rgba(0, 74, 116, 1);
+    font-weight: 700;
+    margin: 8px auto 0;
+}
+
+.user-edit-profile .user-block-info {
+    display: flex;
+    gap: 16px;
+    margin-top: 26px;
+}
+
+.user-edit-profile p.your-user-location.green,
+.user-edit-profile p.your-user-phone.green {
+    color: rgba(16, 138, 0, 1);
+}
+
+.user-edit-profile .job-alert {
+    margin: 88px 12px 0;
+}
+
+.user-edit-profile .job-alert h3 {
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.user-edit-profile .job-alert p {
+    color: rgba(28, 28, 28, 1);
+    font-size: 14px;
+    line-height: 24px;
+    margin: 8px 0;
+}
+
+
+.user-edit-profile form#job-alert-info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.user-edit-profile .job-alert-info input {
+    height: 48px;
+    border: 1.5px solid rgba(94, 113, 141, 1);
+}
+
+.user-edit-profile .job-alert-info input#send-alert-info-button {
+    height: 40px;
+    background: rgba(67, 136, 175, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 152px;
+    cursor: pointer;
+}
+
+.user-edit-profile .edit-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-edit-profile .edit-field label,
+.user-edit-profile .show-job-preferences-colum label {
+    font-size: 16px;
+    color: rgba(28, 28, 28, 1);
+    font-weight: 700;
+    line-height: 32px;
+    margin-left: 12px;
+}
+
+.user-edit-profile .show-job-preferences-colum label {
+    margin-left: 0;
+}
+
+.user-edit-profile p.p-show-job-preferences-colum {
+    margin: 24px 0;
+}
+
+.user-edit-profile .edit-field input {
+    margin: 8px 12px 16px;
+    height: 48px;
+    border: 0px;
+}
+
+.user-edit-profile .button-save-changes,
+.user-edit-profile a.button-save-block-job-preferences,
+.user-edit-profile a.button-save-block-experience,
+.user-edit-profile .button-save-block-additional {
+    background-color: rgba(67, 136, 175, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 37px;
+    text-align: center;
+}
+
+.user-edit-profile .button-cancel,
+.user-edit-profile a.button-cancel-block-job-preferences,
+.user-edit-profile a.button-cancel-block-experience,
+.user-edit-profile .button-cancel-block-additional {
+    color: rgba(67, 136, 175, 1);
+    border: 1px solid rgba(67, 136, 175, 1);
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 64.5px;
+    text-align: center;
+}
+
+.user-edit-profile .submit-block-edit-profile,
+.user-edit-profile .submit-block-job-preferences,
+.user-edit-profile .block-for-save-experience,
+.user-edit-profile .block-for-save-additional {
+    display: flex;
+    margin: 0 12px;
+    gap: 4px;
+}
+
+.user-edit-profile .submit-block-job-preferences,
+.user-edit-profile .block-for-save-experience,
+.user-edit-profile .block-for-save-additional {
+    float: right;
+    margin-top: 40px;
+    gap: 16px;
+}
+
+.user-edit-profile #upload-logo-user-avatar {
+    cursor: pointer;
+}
+
+.user-edit-profile .step {
+    border: 0;
+    height: auto;
+}
+
+.user-edit-profile .step:after {
+    height: 0px
+}
+
+/* delete account  */
+.delete-account-popup-custom-yes-no-for-ajax-del {
+    display: none;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 9;
+    /* display: flex;   */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-account-for-user-yes-no {
+    width: 588px;
+    height: 368px;
+    background: #fff;
+    padding: 32px 100px;
+    position: relative;
+}
+
+.popup-account-for-user-yes-no span.modal-close,
+.success-block-after-delete-account span.modal-close {
+    background: url(/wp-content/themes/kitas-landing-theme/img/close.png);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    right: 28px;
+    top: 22px;
+}
+
+.success-block-after-delete-account {
+    width: 588px;
+    height: 216px;
+    background: #fff;
+    padding: 32px 100px;
+    position: relative;
+    display: none;
+    flex-direction: column;
+}
+
+
+.popup-account-for-user-yes-no h2,
+.success-block-after-delete-account h2 {
+    color: rgba(28, 28, 28, 1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.success-block-after-delete-account p {
+    color: rgba(28, 28, 28, 1);
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 24px;
+}
+
+.success-block-after-delete-account span.to-job-board {
+    background: rgba(18, 100, 147, 1);
+    padding: 8px 24px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 24px auto 0;
+    height: 40px;
+    width: 148px;
+    cursor: pointer;
+}
+
+.success-block-after-delete-account span.to-job-board a {
+    color: #fff;
+}
+
+
+.popup-account-for-user-yes-no-text h3 {
+    font-size: 14px;
+    color: rgba(28, 28, 28, 1);
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.popup-account-for-user-yes-no-text p {
+    font-size: 14px;
+    color: rgba(28, 28, 28, 1);
+    line-height: 24px;
+}
+
+.buttons-for-delete-ac-for-ajax {
+    display: flex;
+    margin-top: 28px;
+    gap: 24px;
+}
+
+.buttons-for-delete-ac-for-ajax span.delete-account {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    background: rgba(0, 74, 116, 1);
+    width: 182px;
+    height: 48px;
+    color: #fff;
+    padding: 12px 27px;
+}
+
+.buttons-for-delete-ac-for-ajax span.cancel-account {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    background: rgba(246, 249, 255, 1);
+    width: 182px;
+    height: 48px;
+    color: rgba(0, 74, 116, 1);;
+    padding: 12px 65px;
+}
+
+.popup-account-for-user-yes-no-text {
+    margin-top: 24px;
+}
+
+.buttons-for-delete-ac-for-ajax span {
+    cursor: pointer;
+}
+
+.by-proceeding {
+    display: block;
+    color: rgba(90, 90, 90, 1);
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 24px;
+}
+
+.check-yes-for-delete-account {
+    margin-top: 18px;
+    padding: 0 2px;
+    display: flex;
+    gap: 8px;
+}
+
+.check-yes-for-delete-account span {
+    color: rgba(90, 90, 90, 1);
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 2px;
+}
+
+.check-yes-for-delete-account input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border: 2px solid rgba(18, 100, 147, 1);
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.check-yes-for-delete-account input[type="checkbox"]:checked { 
+    background-color: rgba(18, 100, 147, 1);
+}
+
+
+   .check-yes-for-delete-account input[type="checkbox"]:checked::before {
+    content: '';
+    background-image: url('/wp-content/themes/kitas-landing-theme/img/yescheck.svg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 8px;
+}
+
+.check-yes-for-delete-account label {
+    margin-left: 10px;
+    cursor: pointer;
+}

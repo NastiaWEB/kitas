@@ -1,0 +1,195 @@
+.main-content-floating-block {
+    display: flex;
+}
+
+.image-container-logo {
+    position: relative;
+    display: inline-block;
+}
+
+.verification-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 24px;
+    height: 24px; 
+}
+
+.company-page-verified-company {
+    padding-top: 10px;
+}
+
+.reviews-menu-container {
+    display: flex;
+    width: calc(100% - 150px);
+    justify-content: space-around;
+}
+
+.company-about-map {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.company-page-verified-company,
+.click-rate {
+    margin-left: 24px;
+}
+
+.company-page-name,
+.rating-number,
+.reviews-menu-tab,
+.work-details,
+h5 {
+    font-weight: 600;
+}
+
+.company-page-name,
+.company-page-adress {
+    display: flex;
+    gap: 8px;
+    font-size: 24px;
+}
+
+.company-page-adress {
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.company-page-adress,
+.click-rate,
+.key-info,
+.description-text,
+.reviews-quantity  {
+    font-weight: 400;
+}
+
+.rating-number {
+    color: #333230;
+    font-size: 18px;
+    line-height: 32px;
+    margin-right: 8px;
+}
+
+.click-rate {
+    color: #546E7A;
+    font-size: 14px;
+}
+
+.reviews-menu {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: solid 0.5px #747577;
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+
+.reviews-menu-container {
+    display: flex;
+}
+
+.button-review {
+    padding: 8px 24px;
+    line-height: 20px;
+}
+
+.reviews-menu-tab {
+    color: #747577;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.reviews-menu-tab-and-quantity {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.reviews-quantity {
+    color: #07496E;
+    font-size: 16px;
+    line-height: 24px; 
+}
+
+h2 {
+    color: #333230; 
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.company-profile-block {
+    margin-top: 16px;
+}
+
+.company-profile-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-about-block {
+    margin-left: 40px;
+}
+
+.company-about-block-base-info {
+    display: flex;
+    gap: 37px;
+}
+
+.work-details,
+.key-info {
+    margin-bottom: 8px;
+}
+
+.work-details,
+h5 {
+    color:  #333230;
+}
+
+.work-details,
+.key-info,
+h5,
+.description-text {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.key-info,
+.description-text {
+    color:  #747577;
+}
+
+.job-card,
+.photo-gallery {
+    margin-bottom: 64px;
+}
+
+.photo-gallery {
+    display: flex;
+    margin-top: 10px;
+}
+
+.photo-gallery-big-image {
+    background-color: #D9D9D9;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.photo-gallery-small-images {
+    width: 60%;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-image {
+    width: calc(33% - 10px);
+    height: 125px;
+    background-color: #D9D9D9;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

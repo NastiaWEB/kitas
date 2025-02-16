@@ -1,0 +1,22 @@
+.my-job-offers .main-head-block {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.my-job-offers .main-head-block .head-block-left-choice {
+    display: flex;
+    margin: 40px 0;
+    gap: 40px;
+}
+
+.my-job-offers .main-head-block a.choice-option.active {
+    font-weight: 700;
+    color: #3964A6;
+    text-decoration: underline;
+}
+.my-job-offers .main-head-block a.choice-option {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}

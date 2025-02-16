@@ -1,0 +1,889 @@
+.container {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.head-block {
+    display: flex;
+}
+
+.head-block .head-block-left {
+    width: 80%;
+}
+
+.head-block .head-block-right {
+    width: 20%;
+    text-align: right;
+    margin-top: 120px;
+}
+
+.main-head-block .head-block-left-choice {
+    display: flex;
+    margin: 40px 0;
+    gap: 40px;
+}
+
+.main-head-block a.choice-option {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    padding-bottom: 8px;
+}
+
+.main-head-block a.choice-option.active {
+    font-weight: 700;
+    color: #3964A6;
+    border-bottom: 2px solid rgba(57, 100, 166, 1);
+}
+
+span.count-tab.count-my-job-offers {
+    margin-left: 24px;
+}
+
+
+.main-head-block {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.head-block .company-header {
+    display: flex;
+}
+
+.head-block .company-header-avatar {
+    position: relative;
+    max-width: 180px;
+    height: 120px;
+    width: 100%;
+    background-color: rgba(242, 242, 242, 1);
+    overflow: hidden;
+}
+
+.head-block .company-header-avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.head-block .company-header-info {
+    margin: 0 24px;
+}
+
+.head-block .company-header-info h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 40px;
+}
+
+.head-block .company-header-info span {
+    color: rgba(0, 74, 116, 1);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.head-block .head-block-right a {
+    color: rgba(94, 113, 141, 1);
+}
+
+.company-info-block {
+    display: flex;
+    margin-top: 40px;
+}
+
+.company-info-block .company-info-left {
+    width: 58%;
+}
+
+.company-info-block .company-info-left h2,
+.photo-gallery h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 24px;
+}
+
+.company-info-block .company-info-left-block h3 {
+    width: 35%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.company-info-block .company-info-left-block span {
+    color: rgba(119, 119, 119, 1);
+    font-size: 16px;
+}
+
+.company-info-block span.information-false,
+.company-info-block span.information-false.ml-40,
+.photo-gallery-info-img .green-text {
+    color: rgba(16, 138, 0, 1);
+}
+
+.ml-40 {
+    margin-left: 40px;
+}
+
+.mr-40 {
+    margin-right: 40px;
+}
+
+.company-info-block .company-info-left-block {
+    display: flex;
+    margin-bottom: 16px;
+    margin-left: 40px;
+}
+
+.company-info-block .company-info-right {
+    width: 40%;
+}
+
+
+.photo-gallery .photo-gallery-info-img p {
+    line-height: 24px;
+}
+
+.photo-gallery span.green-text.under {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container.view-info .photo-gallery-info-gallery {
+    display: flex;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.container.view-info .first-image-block ,
+.container.view-info .other-images-block{
+    width: 50%;
+    padding: 5px;
+}
+
+.container.view-info .first-image-block img {
+    padding: 5px 0;
+}
+
+.container.view-info .other-images-block {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.container.view-info .other-images-block img {
+    width: 50%;
+    padding: 5px;
+    position: relative;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* Block edit */
+.container.edit-info {
+    display: none;
+}
+
+.container.edit-info .red-required {
+    color: rgba(228, 30, 63, 1);
+}
+
+.container.edit-info input {
+    border: 1px solid rgba(124, 149, 187, 1);
+    height: 48px;
+}
+
+.container.edit-info .company-header-info h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.container.edit-info .head-block .company-header-info {
+    width: 100%;
+}
+
+.container.edit-info .head-block .head-block-left {
+    width: 100%;
+}
+
+.container.edit-info .company-header-info input {
+    max-width: 812px;
+    width: 100%;
+}
+
+.container.edit-info .company-info-left-block h3 {
+    width: 31%;
+}
+
+.container.edit-info .company-info-left-block input {
+    max-width: 384px;
+    width: 100%;
+}
+
+.container.edit-info .upload-images {
+    display: block;
+    width: 645px;
+    height: 336px;
+    border: 1px solid rgba(242, 242, 242, 1);
+    text-align: center;
+}
+
+.container.edit-info .upload-images img {
+    display: block;
+    margin: 40px auto 0;
+}
+
+.container.edit-info .upload-images h4 {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.container.edit-info .upload-images p {
+    font-size: 16px;
+    color: rgba(119, 119, 119, 1);
+    line-height: 24px;
+}
+
+.container.edit-info .upload-images .warning-info {
+    display: block;
+    margin-top: 24px;
+    font-size: 12px;
+    color: rgba(228, 30, 63, 1);
+}
+
+.container.edit-info span.select-file-for-gallery-company {
+    display: block;
+    width: 133px;
+    height: 40px;
+    background: rgba(94, 113, 141, 1);
+    color: #fff;
+    padding: 8px 24px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 32px auto 0;
+    cursor: pointer;
+}
+
+.container.edit-info .save-cancel-block {
+    margin-top: 104px;
+    display: flex;
+    gap: 16px;
+}
+
+.container.edit-info span.button-save-changes {
+    display: block;
+    width: 184px;
+    height: 40px;
+    background: rgba(67, 136, 175, 1);
+    color: #fff;
+    padding: 8px 37px;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.container.edit-info span.button-cancel {
+    display: block;
+    width: 184px;
+    height: 40px;
+    border: 1px solid rgba(67, 136, 175, 1);
+    color: rgba(67, 136, 175, 1);;
+    padding: 8px 64px;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.container.edit-info .photo-gallery h2 {
+    margin-top: 80px;
+}
+
+.container.edit-info #teaching-approach {
+    display: block;
+    max-width: 590px;
+    width: 100%;
+    height: 120px;
+    margin-left: 40px;
+    border: 1px solid rgba(124, 149, 187, 1);
+}
+
+.container.edit-info .company-info-left-right {
+    margin-top: 66px;
+}
+
+.container.edit-info .company-header-avatar-update {
+    position: relative;
+    max-width: 180px;
+    max-height: 120px;
+    width: 100%;
+    background-color: rgba(242, 242, 242, 1);
+    margin-top: 28px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.company-header-avatar-update .avatar-company-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 180px;
+    max-height: 120px;
+}
+
+.company-header-avatar-update h5 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 28px;
+}
+
+.container.edit-info .company-header-avatar-update span.warning-info {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    color: rgba(228, 30, 63, 1);
+}
+
+.container.edit-info img.camera-right-b {
+    position: absolute;
+    right: -5%;
+    bottom: -10%;
+    z-index: 2;
+}
+
+.container.edit-info .gallery-show-download {
+    margin-top: 144px;
+    padding: 5px;
+    border: 1px solid rgba(242, 242, 242, 1);
+}
+
+.container.edit-info .photo-gallery-main {
+    display: flex;
+}
+
+.gallery-show-download img {
+    max-width: 33%;
+    max-height: 250px;
+    height: 100%;
+    object-fit: cover;
+    padding: 5px;
+}
+
+#add_photos_click, #add_working_click,
+#add_company_click, #add_describe_click {
+    cursor: pointer;
+}
+
+/* Blocks User */
+
+.container.view-user .main-show-user {
+    display: flex;
+    width: 100%;
+    gap: 78px;
+}
+
+.main-show-user-half {
+    display: flex;
+    max-width: 588px;
+}
+
+.container.view-user .show-user-left,
+.container.view-user .show-user-right{
+    display: flex;
+    width: 50%;
+    max-height: 240px;
+}
+
+.container.view-user .show-user-left {
+    position: relative;
+    max-width: 588px;
+    background: rgba(242, 245, 248, 1);
+}
+
+.container.view-user .show-user-right {
+    max-width: 456px;
+    flex-direction: column;
+}
+
+.container.view-user .user-photo {
+    max-width: 120px;
+    max-height: 120px;
+    margin: 32px 40px 88px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.container.view-user .user-photo .camera-right-b {
+    position: absolute;
+    top: 80%;
+    right: -16%;
+    z-index: 2;
+}
+
+.container.view-user .user-photo .avatar-user-b {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container.view-user .user-info {
+    margin: 32px 24px;
+}
+
+.container.view-user .user-info h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.container.view-user .user-info p.hiring-p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+} 
+
+.container.view-user .line-blue-block {
+    margin-top: 16px;
+    height: 1px;
+    width: 100%;
+    background:rgba(109, 167, 204, 1);
+}
+
+.container.view-user .user-block-info-profile-fields-plus {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.container.view-user a.user-edit-details {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.container.view-user  .user-info-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.container.view-user .show-user-right .user-info-title-span {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(119, 119, 119, 1);
+}
+
+.container.view-user .show-user-right .user-info-sub-title-span {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(119, 119, 119, 1);
+}
+
+.container.view-user .user-info-view-resault {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    border: 1px solid rgba(242, 242, 242, 1);
+    padding: 24px;
+}
+
+.container.view-user .user-info-view-resault .user-block-info-profile-avatar {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    padding: 18px 11px;
+    color: #fff;
+    background: rgba(255, 99, 207, 1);
+}
+
+.container.view-user .user-info-view-resault .user-block-info-profile-avatar img {
+    max-width: 48px;
+    width: 100%;
+    z-index: 3;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.container.view-user .user-info-view-resault .user-block-info-profile-avatar .user-avatar {
+    display: flex;
+}
+
+.container.view-user .user-block-info-profile-fields h4.user-show-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.container.view-user .user-block-info-profile-fields p.hiring-show-p {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.container.view-user .settings-user-block {
+    margin-top: 32px;
+}
+
+.container.view-user .delete-account {
+    display: flex;
+    justify-content: center;
+    margin: 56px auto 0;
+    position: relative;
+    cursor: pointer;
+    width: 156px;
+}
+
+.container.view-user .delete-account span.button-delete-account  {
+    font-size: 16px;
+    color: rgba(163, 180, 188, 1);
+    line-height: 24px;
+}
+
+.container.view-user .update-user-left {
+    display: none;
+    background: rgba(242, 245, 248, 1);
+    max-width: 588px;
+    width: 100%;
+    padding: 32px 40px;
+}
+
+.container.view-user .user-avatar-change .user-block-info-profile-avatar {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 40px;
+    color: #fff;
+    background: rgba(255, 99, 207, 1);
+    cursor: pointer;
+}
+
+.container.view-user .user-avatar-change img.uploaded-image-for-user-avatar {
+    max-width: 180px;
+    width: 100%;
+    z-index: 3;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.container.view-user .user-photo .uploaded-image-for-user-avatar {
+    max-width: 120px;
+    width: 100%;
+    z-index: 3;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.container.view-user .user-avatar-change .user-block-info-profile-avatar .user-avatar {
+    display: flex;
+}
+
+.container.view-user .user-avatar-change span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.container.view-user form#update-user-form-fields h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 8px 0 4px;
+}
+
+.container.view-user form#update-user-form-fields input {
+    height: 48px;
+    width: 508px;
+}
+
+.container.view-user form#update-user-form-fields span.red {
+    color: rgba(228, 30, 63, 1);
+}
+
+.container.view-user .send-cancel-form-user {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.container.view-user .send-cancel-form-user span.button-save-changes-user {
+    display: block;
+    line-height: 24px;
+    padding: 8px 37px;
+    width: 184px;
+    height: 40px;
+    color: #fff;
+    background: rgba(67, 136, 175, 1);
+    cursor: pointer;
+}
+
+.container.view-user .send-cancel-form-user span.button-cancel-user {
+    display: block;
+    line-height: 24px;
+    padding: 8px 64.5px;
+    width: 184px;
+    height: 40px;
+    color:  rgba(67, 136, 175, 1);
+    border: 1px solid rgba(67, 136, 175, 1);
+    cursor: pointer;
+}
+
+.container.view-user .user-block-info-profile-avatar img.camera-right-b {
+    position: absolute;
+    top: 70%;
+    right: -8%;
+    z-index: 4;
+}
+
+/* My job offers */
+
+.my-job-affers {
+    display: block;
+    text-align: left;
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.offers-container {
+    min-width: 1279px;
+    width: 100%;
+}
+
+.offers-container h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+h3.title-for-hidden-offers.closed {
+    margin: 30px 0 -16px;
+}
+
+.title-plus-link {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -18px;
+}
+
+.title-plus-link a.post-new-job {
+    background: rgba(109, 167, 204, 1);
+    color: #fff;
+    padding: 8px 50px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* delete account  */
+.delete-account-popup-custom-yes-no-for-ajax-del {
+    display: none;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 9;
+    /* display: flex;   */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-account-for-user-yes-no {
+    width: 588px;
+    height: 368px;
+    background: #fff;
+    padding: 32px 100px;
+    position: relative;
+}
+
+.popup-account-for-user-yes-no span.modal-close,
+.success-block-after-delete-account span.modal-close {
+    background: url(/wp-content/themes/kitas-landing-theme/img/close.png);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    right: 28px;
+    top: 22px;
+}
+
+.success-block-after-delete-account {
+    width: 588px;
+    height: 216px;
+    background: #fff;
+    padding: 32px 100px;
+    position: relative;
+    display: none;
+    flex-direction: column;
+}
+
+
+.popup-account-for-user-yes-no h2,
+.success-block-after-delete-account h2 {
+    color: rgba(28, 28, 28, 1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.success-block-after-delete-account p {
+    color: rgba(28, 28, 28, 1);
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 24px;
+}
+
+.success-block-after-delete-account span.to-job-board {
+    background: rgba(18, 100, 147, 1);
+    padding: 8px 24px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 24px auto 0;
+    height: 40px;
+    width: 148px;
+    cursor: pointer;
+}
+
+.success-block-after-delete-account span.to-job-board a {
+    color: #fff;
+}
+
+.popup-account-for-user-yes-no-text h3 {
+    font-size: 14px;
+    color: rgba(28, 28, 28, 1);
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.popup-account-for-user-yes-no-text p {
+    font-size: 14px;
+    color: rgba(28, 28, 28, 1);
+    line-height: 24px;
+}
+
+.buttons-for-delete-ac-for-ajax {
+    display: flex;
+    margin-top: 28px;
+    gap: 24px;
+}
+
+.buttons-for-delete-ac-for-ajax span.delete-account {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    background: rgba(0, 74, 116, 1);
+    width: 182px;
+    height: 48px;
+    color: #fff;
+    padding: 12px 27px;
+}
+
+.buttons-for-delete-ac-for-ajax span.cancel-account {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    background: rgba(246, 249, 255, 1);
+    width: 182px;
+    height: 48px;
+    color: rgba(0, 74, 116, 1);;
+    padding: 12px 65px;
+}
+
+.popup-account-for-user-yes-no-text {
+    margin-top: 24px;
+}
+
+.buttons-for-delete-ac-for-ajax span {
+    cursor: pointer;
+}
+
+.by-proceeding {
+    display: block;
+    color: rgba(90, 90, 90, 1);
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 24px;
+}
+
+.check-yes-for-delete-account {
+    margin-top: 18px;
+    padding: 0 2px;
+    display: flex;
+    gap: 8px;
+}
+
+.check-yes-for-delete-account span {
+    color: rgba(90, 90, 90, 1);
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 2px;
+}
+
+.check-yes-for-delete-account input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border: 2px solid rgba(18, 100, 147, 1);
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.check-yes-for-delete-account input[type="checkbox"]:checked { 
+    background-color: rgba(18, 100, 147, 1);
+}
+
+
+   .check-yes-for-delete-account input[type="checkbox"]:checked::before {
+    content: '';
+    background-image: url('/wp-content/themes/kitas-landing-theme/img/yescheck.svg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 8px;
+}
+
+.check-yes-for-delete-account label {
+    margin-left: 10px;
+    cursor: pointer;
+}

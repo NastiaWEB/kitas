@@ -1,0 +1,188 @@
+/* Step 2  */
+
+.step-2-registr-block {
+    display: none;
+}
+
+.registr-block-form,
+.registr-block-info {
+    width: 50%;
+    margin-top: 120px;
+    margin-bottom: 95px;
+}
+
+/* Block on the left */
+.registr-block-form {
+    background: #fff;
+    padding: 40px 100px;
+}
+
+.registr-block-form h2,
+.step-3-info-block h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(28, 28, 28, 1);
+}
+
+.registr-block-form h4,
+.step-3-info-block h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(28, 28, 28, 1);
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.registr-block-form h4 span,
+.step-3-info-block h4 span {
+    color: rgba(228, 30, 63, 1);
+}
+
+.registr-block-form form.form-user-info input ,
+.step-3-registr-block form.form-user-company input,
+.step-3-registr-block form.form-user-company select#job_category {
+    border: 1px solid rgba(124, 149, 187, 1);
+    width: 384px;
+    height: 48px;
+}
+
+.registr-block-form button#submit-form {
+    width: 384px;
+    height: 48px;
+    margin-top: 16px;
+    background: rgba(109, 167, 204, 1);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* Block on the right */
+.registr-block-info {
+    padding: 40px 74px;
+}
+
+.registr-block-info-title {
+    margin-top: 40px;
+}
+
+.registr-block-info-title span.info-title {
+    font-size: 16px;
+    color: rgba(119, 119, 119, 1);
+}
+
+.registr-block-info-title span.info-description {
+    font-size: 12px;
+    color: rgba(119, 119, 119, 1);
+}
+
+.registr-block-info-profile {
+    display: flex;
+    background: #fff;
+    padding: 32px;
+    margin-top: 16px;
+}
+
+.registr-block-info-profile .registr-block-info-profile-avatar .user-avatar {
+    background: rgba(255, 99, 207, 1);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registr-block-info-profile .registr-block-info-profile-avatar .user-avatar-firstname,
+.registr-block-info-profile .registr-block-info-profile-avatar .user-avatar-lastname {
+    position: relative;
+    /* top: 35%; */
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin: -1px;
+}
+
+.registr-block-info-profile-fields {
+    margin: 0 16px;
+}
+
+.registr-block-info-profile-fields .first-last-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(28, 28, 28, 1);
+}
+
+.registr-block-info-profile-fields .your-job-title {
+    font-size: 12px;
+    color: rgba(28, 28, 28, 1);
+    font-family: "Montserrat";
+    margin-top: 10px;
+}
+
+.registr-block-info-profile-fields .your-email,
+.registr-block-info-profile-fields .your-phone {
+    font-size: 14px;
+    color: rgba(119, 119, 119, 1);
+}
+
+.registr-block-info-profile-fields .registr-block-info-profile-fields-plus {
+    display: flex;
+    margin: 16px 0 8px;
+}
+
+.registr-block-info-profile-fields .registr-block-info-profile-fields-plus img {
+    margin-right: 8px;
+    max-height: 14px;
+}
+
+/* Step 3  */
+
+.step-3-registr-block {
+    display: none;
+}
+
+.step-3-registr-block {
+    margin: 120px auto;
+    background: #fff;
+}
+
+.step-3-info-block {
+    padding: 80px 204px;
+}
+
+.step-3-info-block .form-block-half {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.step-3-info-block .form-block-half-child {
+    width: 50%;
+    margin-bottom: 8px;
+}
+
+.step-3-info-block .form-block-half-child button#submit-form-registr-user {
+    width: 384px;
+    height: 48px;
+    background: rgba(109, 167, 204, 1);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.form-three-colum {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-block-tt-child {
+    width: 33%;
+}
+
+.form-block-tt-child input {
+    max-width: 254px;
+}

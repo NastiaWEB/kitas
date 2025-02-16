@@ -1,0 +1,269 @@
+.header-blog-page {
+    background-color: white;
+}
+
+.header-content-logo-blog-page,
+.main-heading,
+.text-description,
+.author-name,
+.article-data-info,
+.heading-for-article-column,
+.article-read-more,
+.main-heading-row {
+    font-family: "Montserrat",sans-serif;
+}
+
+.header-content-logo-blog-page,
+.h2-blog-page {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.text-link-dark-color {
+    color: #333230;;
+    text-decoration: none;
+}
+
+.text-selected {
+    text-decoration: underline;
+}
+
+.color-blue {
+    background-color: #6DA7CC;
+}
+
+.start-of-section {
+    margin-top: 48px;
+}
+
+.h2-blog-page {
+    font-family: "Lora",serif;
+}
+.big-article-pic {
+    width: 45%;
+}
+
+.big-article,
+.row-article {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 64px;
+}
+
+.big-article-content,
+.row-article-content {
+    padding: 0px 24px 0px 24px;
+}
+.row-article-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.big-article-content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-pic {
+    width: 100%;
+    max-width: 588px;
+    height: 100%;
+}
+
+.article-tags {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.color-light-blue {
+    background-color: #EFF6F9;
+}
+
+.text-color-teal {
+    color: #175873;
+}
+
+.article-title {
+    margin: 20px 0px 16px 0;
+}
+
+.main-heading {
+    color: #333230;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.text-description {
+    color: #333230;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px
+}
+
+.big-article-data-author-info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.article-author-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.author-name,
+.article-data-info {
+    color: #333230;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.article-columns {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+    /* flex-wrap: wrap; */
+}
+
+.heading-for-article-column {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.article-read-more {
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.article-data-author-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.discover-more-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.tags-section {
+    padding-top: 40px;
+    width: 30%;
+}
+
+.main-heading-row {
+    color: #333230;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.row-article {
+    border-bottom: solid 0.5px #6da7cc;
+    padding-bottom: 48px;
+}
+
+.article-pic-small {
+    max-width: 300px;
+    height: 100%;
+}
+
+.discover-more-tags {
+    margin-top: 16px;
+}
+
+.blog-category {
+    display: flex;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-category {
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.column-article-pic {
+    margin-bottom: 10px;  
+}
+
+.article-pic-column {
+    width: 100%;
+    height: 200px;
+}
+
+.article-column {
+    width: 100%;
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-container.with-sidebar .main-content{
+    max-width: 80%;
+}
+   
+.main-container.with-sidebar .sidebar {
+    max-width: 25%;
+    width: 100%;
+}
+
+.article-pic,
+.article-pic-column,
+.article-pic-small {
+    object-fit: cover;
+}
+
+.secondary-heading {
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.article-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.discover-more-articles {
+    width: 70%;
+}
+
+.article-blog-category {
+    display: none;
+}
+
+.article-info,
+.article-column .article-tags-info,
+.article-tags-info .article-info,
+.post-preview .article-footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-preview {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
