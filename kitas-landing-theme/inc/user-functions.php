@@ -1,4 +1,53 @@
 <?php
+
+//custom displaying of 'First name' field in user registration form
+add_action('user_register', 'kitas_user_register');
+function kitas_user_register($user_id){
+	if (!empty($_POST['first_name'])) {
+		update_user_meta($user_id, 'first_name', sanitize_text_field($_POST['first_name']));
+	}
+}
+
+add_filter('registration_errors', 'kitas_registration_errors', 10, 3);
+function kitas_registration_errors($errors, $sanitized_user_login, $user_email){
+	if (empty($_POST['first_name']) || !empty($_POST['first_name']) && trim($_POST['first_name']) == '') {
+		$errors->add('first_name_error', sprintf('<strong>%s</strong>: %s', __('ERROR', 'kitas'), __('Please fill your name.', 'kitas')));
+	}
+	return $errors;
+}
+
+//creating custom user role "Company"
+add_role(
+	'company',
+	__('Company'),
+	array(
+		'read' => true,
+		'delete_posts' => true,
+		'delete_published_posts' => true,
+		'edit_posts' => true,
+		'publish_posts' => true,
+		'edit_published_posts' => true,
+		'upload_files' => true
+	)
+);
+
+//adding capabilities for Company to create Job Offers
+function job_offer_caps(){
+	$role = get_role('company');
+	$role->add_cap('read');
+	$role->add_cap('read_job-offer');
+	$role->add_cap('read_private_job-offer');
+	$role->add_cap('edit_job-offer');
+	$role->add_cap('edit_published_job-offer');
+	$role->add_cap('publish_job-offer');
+	$role->add_cap('delete_private_job-offer');
+	$role->add_cap('delete_published_job-offer');
+}
+
+add_action('admin_init', 'job_offer_caps', 5);
+
+
+
 //create account
 function my_create_user_function()
 {
@@ -69,8 +118,7 @@ add_action('wp_ajax_check_user_logged_in', 'check_user_logged_in');
 add_action('wp_ajax_nopriv_check_user_logged_in', 'check_user_logged_in');
 
 //creat user conmpany
-function create_user_company()
-{
+function create_user_company(){
 
     $user_email = sanitize_email($_POST['userEmail']);
     $user_password = sanitize_text_field($_POST['userPassword']);
@@ -145,7 +193,7 @@ add_action('wp_ajax_nopriv_create_user_company', 'create_user_company');
 
 //create user profile
 function create_user_for_looking_a_job() {
-    
+
     if (isset($_POST['userEmail']) && isset($_POST['userPassword'])) {
         $email = sanitize_email($_POST['userEmail']);
         $password = sanitize_text_field($_POST['userPassword']);
@@ -180,3 +228,79 @@ function create_user_for_looking_a_job() {
 }
 add_action('wp_ajax_create_user_for_looking_a_job', 'create_user_for_looking_a_job');
 add_action('wp_ajax_nopriv_create_user_for_looking_a_job', 'create_user_for_looking_a_job');
+
+
+
+//if user is not logged in, redirect to registration page
+function restrict_edit_company_page()
+{
+	if (is_page('edit-company-page')) {
+		if (!is_user_logged_in()) {
+			wp_redirect(home_url('/registrations/'));
+			exit;
+		}
+	}
+}
+add_action('template_redirect', 'restrict_edit_company_page');
+
+function restrict_edit_company_page_de()
+{
+	if (is_page('unternehmensseite-bearbeiten')) {
+		if (!is_user_logged_in()) {
+			wp_redirect(home_url('/de/anmeldungen//'));
+			exit;
+		}
+	}
+}
+add_action('template_redirect', 'restrict_edit_company_page_de');
+
+//redirect from registration page if user is logged in
+function redirect_logged_in_users()
+{
+	if (is_user_logged_in() && !current_user_can('administrator')) {
+
+		$current_url = home_url(add_query_arg(null, null));
+
+		$redirect_url_en = home_url('/my-profile/');
+		$redirect_url_de = home_url('/de/mein-profil/');
+
+		if (strpos($current_url, '/registrations/') !== false) {
+			wp_redirect($redirect_url_en);
+			exit;
+		} elseif (strpos($current_url, '/de/anmeldungen/') !== false) {
+			wp_redirect($redirect_url_de);
+			exit;
+		}
+	}
+}
+add_action('template_redirect', 'redirect_logged_in_users');
+
+
+//redirect to login page if user is not logged in
+function redirect_if_not_logged_in()
+{
+	if (!is_user_logged_in()) {
+		$current_url = home_url($_SERVER['REQUEST_URI']);
+
+		$protected_pages = array(
+			home_url('/contact-person-settings/'),
+			home_url('/my-profile/')
+		);
+		foreach ($protected_pages as $page) {
+			if (strpos($current_url, $page) !== false) {
+				wp_redirect(home_url('/registrations/'));
+				exit();
+			}
+		}
+	}
+}
+add_action('template_redirect', 'redirect_if_not_logged_in');
+
+//hide admin bar for users/companies
+function hide_admin_bar_for_subscribers()
+{
+	if (current_user_can('subscriber')) {
+		add_filter('show_admin_bar', '__return_false');
+	}
+}
+add_action('after_setup_theme', 'hide_admin_bar_for_subscribers');

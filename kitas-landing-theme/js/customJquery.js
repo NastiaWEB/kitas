@@ -7,7 +7,7 @@ jQuery(document).ready(function ($) {
 	var displayedPeriod = link.searchParams.get("periodDisplay") ? link.searchParams.get("periodDisplay").toString().split('|') : []; //displayed period of publication, used to be displayed on the chip
 	var selectedTypes = link.searchParams.get("employment_type") ? link.searchParams.get("employment_type").toString().split('|') : [];	 //employment type
 	var selectedLangs = link.searchParams.get("langFilter") ? link.searchParams.getAll("langFilter").toString().split('|') : []; //languages needed for the job
-	var selectedLocs = link.searchParams.get("locFilter") ? link.searchParams.getAll("locFilter").toString().split('|') : []; //locations 
+	var selectedLocs = link.searchParams.get("locFilter") ? link.searchParams.getAll("locFilter").toString().split('|') : []; //locations
 	var selectedCats = link.searchParams.get("catFilter") ? link.searchParams.getAll("catFilter").toString().split('|') : []; //job categories
 	var selectedDate = link.searchParams.get("dateFilter") ? link.searchParams.getAll("dateFilter").toString() : ''; //date after which the job starts
 	var whatTerm = link.searchParams.get("whatTermFilter") ? link.searchParams.getAll("whatTermFilter").toString() : ''; //which term we're searching: title or company?
@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
 	var list = localStorage.getItem('featuredList') ? localStorage.getItem('featuredList').split(',') : []; //featured jobs list
 	var selectedWorkload = link.searchParams.get("workloadFilter") ? link.searchParams.get("workloadFilter").toString().split('|') : [];
 	var displayedWorkload = link.searchParams.get("workloadDisplay") ? link.searchParams.get("workloadDisplay").toString().split('|') : [];
-	var filteredList = []; //used for deleting items from localstorage 
+	var filteredList = []; //used for deleting items from localstorage
 	let pageLang = $('html').attr('lang');
 
 
@@ -500,7 +500,7 @@ jQuery(document).ready(function ($) {
 		filtersAndSearch();
 	});
 
-	// id startsAfterConfirm  
+	// id startsAfterConfirm
 	$('#startDate').on('change', function () {
 		var selectedDate = $(this).val();
 		console.log(selectedDate);
@@ -835,7 +835,7 @@ jQuery(document).ready(function ($) {
 			$('#postFilters .job-card-tags').append('<div class="top-tag tag-light-gray"><p class="chip">' + searchName + '</p><span class="searchReset filtersConfirm">&times;</span></div>');
 		} //search by name
 
-		
+
 		if (locSearchBar.length > 0) {
 			$('#postFilters .job-card-tags').append('<div class="top-tag tag-light-gray"><p class="chip" data-term="' + locSearchBar + '">' + $('.item-title[data-term="' + locSearchBar + '"]').html() + '</p><span class="locSearchReset filtersConfirm">&times;</span></div>');
 		} //search by location
@@ -1052,16 +1052,16 @@ jQuery(document).ready(function ($) {
 	//Ajax for sorting posts
 	//processing sort buttons
 	$(document).on("click", '#sort-most-recent, #sort-top-rated', function (e) {
-		e.preventDefault(); //Canceled behavior for button 
-		// metaKey = 'work_start_time'; //take mera for sort date 
+		e.preventDefault(); //Canceled behavior for button
+		// metaKey = 'work_start_time'; //take mera for sort date
 		orderBy = 'sort-most-recent';
 		paged = 1;
 		filtersAndSearch();
 	});
 
 	$(document).on("click", '#sort-earliest-start-date', function (e) {
-		e.preventDefault(); //Canceled behavior for button 
-		// metaKey = 'sort-earliest-start-date'; //take mera for sort date 
+		e.preventDefault(); //Canceled behavior for button
+		// metaKey = 'sort-earliest-start-date'; //take mera for sort date
 		orderBy = 'sort-earliest-start-date';
 		paged = 1;
 		filtersAndSearch();
@@ -1092,7 +1092,7 @@ jQuery(document).ready(function ($) {
 		}
 	});
 
-	//pagination 
+	//pagination
 	$(document).on("click", "a.page-numbers", function () {
 		switch ($(this).data('paged')) {
 			case 'next': //works only for button which leads to next page in wp
@@ -1184,7 +1184,7 @@ jQuery(document).ready(function ($) {
 		}, 3000);
 	})
 
-	//take link 
+	//take link
 	// $('.applicationToggle').on('click', function () {
 	// 	let readFullLink = $(this).closest('.job-card').find('.job-card-title a').attr('href');
 	// 	let getPostIdOdder = $(this).closest('.job-card').find('#get_post_id_offer').html();
@@ -1217,7 +1217,7 @@ jQuery(document).ready(function ($) {
 		}
 	}
 
-	//if user send form 
+	//if user send form
 	document.addEventListener('click', function (event) {
 		if (event.target.matches('.applicationToggle.send-cv-button-green')) {
 			$('.custom-login-in-ajax-form-true').css('display', 'none');
@@ -1230,7 +1230,7 @@ jQuery(document).ready(function ($) {
 
 
 
-	//check block with send form  
+	//check block with send form
 	function checkBlockForApply() {
 		let linksForm = localStorage.getItem('links') || '';
 		let idsForm = linksForm ? linksForm.split(',').map(Number) : [];
@@ -1275,7 +1275,7 @@ jQuery(document).ready(function ($) {
 					$('.applicationToggle').each(function () {
 						$(this).addClass('send-cv-button-green');
 
-						
+
 
 						if (pageLang === 'de-DE') {
 							$(this).text('Angewandt');
@@ -1304,9 +1304,9 @@ jQuery(document).ready(function ($) {
 
 	// //clear form if it's closed
 	$(document).on('DOMSubtreeModified', function () {
-	
 
-		
+
+
 		if ($('.modal-form-send-cv').hasClass('show')) {
 		} else {
 			$('.modal-form-send-cv').find('input[type="text"], input[type="email"], textarea').not('[name="input_text_1"]').val('');
@@ -1335,7 +1335,7 @@ jQuery(document).ready(function ($) {
 		}
 	});
 
-	//if we open vacation block 
+	//if we open vacation block
 	function getSavedIds() {
 		let savedIds = localStorage.getItem('ClickVaca');
 		return savedIds ? JSON.parse(savedIds) : [];
@@ -1397,27 +1397,9 @@ jQuery(document).ready(function ($) {
 			success: function (response) {
 				if (response.success) {
 					console.log(response.data);
-
-					reloadFormContent();
 				} else {
 					console.log('Errors: ' + response.data);
 				}
-			},
-			error: function () {
-				console.log('Errors');
-			}
-		});
-	}
-
-	function reloadFormContent() {
-		$.ajax({
-			url: myAjax.ajaxurl,
-			method: 'GET',
-			data: {
-				action: 'load_form_content'
-			},
-			success: function (data) {
-				$('#modal-form-send-cv-content').html(data);
 			},
 			error: function () {
 				console.log('Errors');
@@ -1651,7 +1633,7 @@ jQuery(document).ready(function ($) {
 		$(this).parent().next('.error-message').hide();
 	});
 
-	//tike id form 
+	//tike id form
 	$('.applicationToggle').on('click', function () {
 		let parentCardEnd = $(this).closest('.card-end');
 		let postId = parentCardEnd.find('#get_post_id_offer').text().trim();
@@ -1670,7 +1652,7 @@ jQuery(document).ready(function ($) {
 	});
 
 
-	//dislike global 
+	//dislike global
 	function updateDislikeList() {
 		let dislikeList = localStorage.getItem('dislikeList');
 		let postIds = [];
@@ -1738,7 +1720,7 @@ jQuery(document).ready(function ($) {
 		}
 	});
 
-	//if user is not logged 
+	//if user is not logged
 	$(document).on("click", function (event) {
 		let target = $(event.target).closest('.no-login-but-ld.like, .no-login-but-ld.dislike');
 
