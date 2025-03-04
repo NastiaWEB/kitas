@@ -21,7 +21,8 @@
 
 .reviews-menu-container {
     display: flex;
-    width: calc(100% - 150px);
+    flex: 1;
+    /* width: calc(100% - 150px); */
     justify-content: space-around;
 }
 

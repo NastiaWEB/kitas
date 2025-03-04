@@ -146,21 +146,21 @@ ul#menu-hide-menu {
   padding: 0;
 }
 
-.color-teal {
+.top-tag.color-teal {
     background-color: #4388af;
 }
 
-.color-magnolia {
+.top-tag.color-magnolia {
     background-color: #efe2ff;
     color: #9747ff;
 }
 
-.color-blush {
+.top-tag.color-blush {
     background-color: #fff3fb;
     color: #c71791;
 }
 
-.color-alice-blue {
+.top-tag.color-alice-blue {
     background-color: #ecf4ff;
     color: #485dff;
 }

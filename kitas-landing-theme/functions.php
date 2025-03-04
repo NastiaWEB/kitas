@@ -1529,3 +1529,30 @@ function translate_months($text, $lang)
 
 	return $text;
 }
+
+//Allow to use REST Api for filtration
+function allow_custom_taxonomy_filters($args, $request) {
+    $taxonomies = array('job_category', 'location', 'employment-type', 'teaching-approach', 'offer_language');
+
+    foreach ($taxonomies as $taxonomy) {
+        if (isset($request[$taxonomy])) {
+            $terms = $request[$taxonomy];
+            
+            // Check if there are multiple values (comma-separated)
+            if (strpos($terms, ',') !== false) {
+                $terms = explode(',', $terms); // Convert to array if multiple
+            } else {
+                $terms = array($terms); // Wrap single value in an array
+            }
+            
+            $args['tax_query'][] = array(
+                'taxonomy' => $taxonomy,
+                'field'    => 'slug',
+                'terms'    => $terms,
+            );
+        }
+    }
+
+    return $args;
+}
+add_filter('rest_job_offer_query', 'allow_custom_taxonomy_filters', 10, 2);

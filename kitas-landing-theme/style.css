@@ -1261,6 +1261,8 @@ div#fluentform_3_success {
 
 .sort-title-sort-more {
 	color: #40516b;
+    display: flex;
+    /* gap: 6px; */
 }
 
 .sort-more.open .sort-title-sort-more {
